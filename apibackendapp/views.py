@@ -68,7 +68,7 @@ class LoginAPIView(APIView):
                 return Response(response, status=status.HTTP_200_OK)
             else:
                 response = {"status":status.HTTP_401_UNAUTHORIZED,
-                            "message":"Sssorryyyyyy!!!! Username um password thappayirukk!!"
+                            "message":"Maaf kijiyee.. username aur password galath hai!!"
                 }
                 return Response(response, status=status.HTTP_401_UNAUTHORIZED)
         
