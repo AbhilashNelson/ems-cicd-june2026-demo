@@ -90,7 +90,7 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer
     #to bypass the permission for login 
-    #permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.AllowAny]
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
